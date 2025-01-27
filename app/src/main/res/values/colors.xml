@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="rojito">#ED5757</color>
+    <color name="amarillito">#F8DA66</color>
+    <color name="cremita">#FACCAE</color>
+
+
+
 </resources>

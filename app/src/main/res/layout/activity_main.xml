@@ -5,16 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+   >
 
     <TextView
-        android:id="@+id/principal"
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Find cocktail!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        android:textSize= "100px"
+        />
+
+    <EditText
+        android:id="@+id/textoo"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titulo"
+        app:layout_constraintVertical_bias="0.076"
+        android:hint="Busqueda"
+        android:textColorHint="@color/amarillito"
+        />
+
+    <Button
+        android:id="@+id/buscar"
+        android:layout_width="96dp"
+        android:layout_height="44dp"
+        android:hint="Buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textoo"
+        app:layout_constraintVertical_bias="0.066"
+        tools:layout_editor_absoluteX="157dp"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/rojito"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Cocktails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="200dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

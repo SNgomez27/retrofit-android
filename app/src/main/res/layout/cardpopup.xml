@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre "
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Intruciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasos a seguir:"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/idCocktail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Cóctel"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</ScrollView>

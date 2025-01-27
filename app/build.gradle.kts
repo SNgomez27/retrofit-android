@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.sngomez27.retrofitexample"
-        minSdk = 24
+        minSdk = 34
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -32,8 +32,9 @@ android {
 }
 
 dependencies {
-
-    implementation(libs.converter.gson.x.x1.x)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
     implementation(libs.retrofit.v2110)
     implementation(libs.gson)
     implementation(libs.retrofit2.retrofit)

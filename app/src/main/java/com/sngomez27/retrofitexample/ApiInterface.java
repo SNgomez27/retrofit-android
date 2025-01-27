@@ -4,8 +4,11 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Query;
 
 public interface ApiInterface {
-    @GET("cokctails-array-json")
-    Call<List<Cocktail>> getCocktails();
+    @GET("filter.php")
+    Call<Drinks> getDrinkByLicour(@Query("i")String licour);
+    @GET("lookup.php")
+    Call<Drinks> getDrinkByid(@Query("i")String id);
 }
